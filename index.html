@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <link rel="stylesheet" href="intro.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Cairo&family=Inter:wght@400;700&family=Karla:wght@400;700&family=Kumbh+Sans:wght@400;700&family=Lexend+Deca&family=Open+Sans&family=Outfit:wght@300;400;600;700&family=Overpass:wght@400;700&family=Poppins:wght@200;400;500;600;700&family=Raleway:wght@400;700&family=Red+Hat+Display:wght@500;700;900&family=Roboto&family=Rubik:wght@300;400;600;800&family=Spartan:wght@400;500;700&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <div class="intro">
+    <!-- Start text -->
+    <section class="text">
+      <h1>Learn to code by watching others</h1>
+      <p> See how experienced developers solve problems in real-time. Watching scripted tutorials is great,
+        but understanding how developers think is invaluable.
+      </p>
+    </section>
+    <!-- End text -->
+    <!-- Start sign -->
+    <section class="sign-up">
+      <p class="try-it-free"><span>Try it free 7 days</span> then $20/mo. thereafter</p>
+      <form action="">
+        <input type="text" placeholder="First Name" id="fn">
+        <label for="fn" id="fnLabel">First Name cannot be empty</label>
+        <input type="text" placeholder="Last Name" id="ln">
+        <label for="ln" id="lnLabel">Last Name cannot be empty</label>
+        <input type="email" placeholder="Email Address" id="ea">
+        <label for="ea" id="speciaLabel">Email cannot be empty</label>
+        <input type="password" placeholder="Password" id="pw">
+        <label for="pw" id="passLabel">Password cannot be empty</label>
+        <button type="submit" id="btn">Claim your free trial</button>
+        <p class="info">By clicking the button, you are agreeing to our <a>Terms and Services</a></p>
+      </form>
+    </section>
+    <!-- End sign -->
+    <!-- <footer>
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </p>
+  </footer> -->
+  </div>
+  <script src="intro.js"></script>
+</body>
+
+</html>

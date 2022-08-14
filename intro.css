@@ -1,0 +1,256 @@
+/* Start basics */
+
+/* Start variabls */
+
+:root {
+    --Red: hsl(0, 100%, 74%);
+    --Green: hsl(154, 59%, 51%);
+    --Blue: hsl(248, 32%, 49%);
+    --Dark-Blue: hsl(249, 10%, 26%);
+    --Grayish-Blue: hsl(246, 25%, 77%);
+}
+
+/* End variabls */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(images/bg-intro-desktop.png);
+    background-color: var(--Red);
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* overflow: hidden; */
+}
+
+
+/* Start intro */
+
+.intro {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    padding: 5em;
+}
+
+/* Start responsive */
+
+@media (max-width: 768px) {
+    body {
+        background-image: url(images/bg-intro-mobile.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .intro {
+        grid-template-columns: 1fr;
+        gap: 7em;
+        padding: 0;
+        margin: 7em auto 0;
+        text-align: center;
+    }
+}
+
+/* End responsive */
+
+/* End intro */
+
+/* Start text */
+
+.text {
+    padding: 0 3.6em 8.5em;
+    color: white;
+    position: relative;
+    top: 5em;
+}
+
+.text h1 {
+    line-height: 1.1;
+    font-size: 43px;
+}
+
+.text p {
+    font-size: 14px;
+}
+
+/* Start responsive */
+
+@media (max-width: 768px) {
+    .text {
+        padding: 2em;
+    }
+
+    .text h1 {
+        font-size: 23px;
+    }
+
+    .text p {
+        font-size: 12px;
+    }
+}
+
+/* End responsive */
+
+/* End text */
+
+/* Start sign-up */
+
+.sign-up {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    position: relative;
+    top: -3.5em;
+    width: 34em;
+}
+
+.sign-up .try-it-free {
+    background-color: var(--Blue);
+    color: #dbdbdb;
+    padding: 15px 0;
+    margin-bottom: 8px;
+    font-size: 14px;
+    box-shadow: 0 5px 0 0 #3e3c494a;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.sign-up .try-it-free span {
+    font-weight: 700;
+    color: white;
+}
+
+.sign-up form {
+    padding: 2em;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    box-shadow: 0 7px 0 0 #3e3c494a;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.sign-up form input {
+    position: relative;
+    padding: 1.5em 2em;
+    outline: none;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+}
+
+.sign-up form input::placeholder {
+    font-weight: 700;
+    font-family: 'Poppins', sans-serif;
+}
+
+.sign-up form input:focus {
+    border: 2px solid var(--Blue);
+}
+
+.sign-up form label {
+    display: none;
+    position: relative;
+    right: -12.8em;
+    top: -0.5em;
+    font-size: 12px;
+    font-style: italic;
+    color: var(--Red);
+    margin: 0;
+}
+
+.sign-up form button {
+    color: white;
+    padding: 1.2em 0;
+    background-color: var(--Green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: 0 4px 0 0 #35b77e;
+    transition: .3s;
+    border: none;
+    border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -moz-border-radius: 6px;
+    -ms-border-radius: 6px;
+    -o-border-radius: 6px;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+.sign-up form button:hover {
+    opacity: .7;
+}
+
+.sign-up form .info {
+    font-size: 12px;
+    color: var(--Grayish-Blue);
+    margin: 0 0 1em;
+}
+
+.sign-up form .info a {
+    color: var(--Red);
+    font-weight: 700;
+}
+
+/* Start responsive */
+
+@media (max-width: 768px) {
+    .sign-up {
+        width: fit-content;
+        padding: 1em;
+    }
+
+    .sign-up .try-it-free {
+        padding: 20px 50px;
+    }
+
+    .sign-up form {
+        padding: 1.3em;
+    }
+}
+
+/* End responsive */
+
+/* End sign-up */
+
+
+/* Start attribution */
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* End attribution */
