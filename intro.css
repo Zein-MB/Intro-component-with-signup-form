@@ -24,7 +24,7 @@ body {
     background-image: url(images/bg-intro-desktop.png);
     background-color: var(--Red);
     background-repeat: no-repeat;
-    background-size: contain;
+    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -49,14 +49,21 @@ body {
         background-image: url(images/bg-intro-mobile.png);
         background-size: cover;
         background-repeat: no-repeat;
+        position: relative;
     }
 
     .intro {
         grid-template-columns: 1fr;
         gap: 7em;
         padding: 0;
-        margin: 7em auto 0;
+        /* margin: 7em auto 0; */
         text-align: center;
+        top: 50%;
+        transform: translateY(-50%);
+        -webkit-transform: translateY(-50%);
+        -moz-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        -o-transform: translateY(-50%);
     }
 }
 
@@ -67,19 +74,23 @@ body {
 /* Start text */
 
 .text {
-    padding: 0 3.6em 8.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 8em 5em 2em 5.8em;
     color: white;
-    position: relative;
-    top: 5em;
 }
 
 .text h1 {
+    font-size: 3.2vw;
+    max-width: 10em;
     line-height: 1.1;
-    font-size: 43px;
+    margin-bottom: .3em;
 }
 
 .text p {
-    font-size: 14px;
+    font-size: 1.06vw;
+    line-height: 1.7;
 }
 
 /* Start responsive */
@@ -110,7 +121,6 @@ body {
     gap: 10px;
     text-align: center;
     position: relative;
-    top: -3.5em;
     width: 34em;
 }
 
